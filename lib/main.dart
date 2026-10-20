@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sidik/container_widget/container_widget.dart';
+import 'package:flutter_sidik/container_widget/latihan_container.dart';
 
 void main() {
-  runApp(const Myapp());
+  runApp(MyApp());
 }
 
-class Myapp extends StatelessWidget {
-  const Myapp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,15 +15,28 @@ class Myapp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text(
-            "belajar flutter",
-            style: TextStyle(color: Colors.white),
-          ),
-          backgroundColor: const Color.fromARGB(255, 22, 0, 57),
-          iconTheme: const IconThemeData(color: Colors.white),
+          title: Text('belajar'),
+          backgroundColor: Colors.blue,
         ),
-        body: const Center(
-          child: Text("flutter well banget", style: TextStyle(fontSize: 18)),
+        body: LatihanContainer(),
+      ),
+    );
+  }
+}
+
+class HellloWidget extends StatelessWidget {
+  const new({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Text(
+        'Hello, Lintang!',
+        style: TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+          backgroundColor: Colors.amber,
+          fontStyle: FontStyle.italic,
         ),
       ),
     );
