@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sidik/container_widget/container_widget.dart';
-import 'package:flutter_sidik/container_widget/latihan_container.dart';
+import 'package:flutter_sidik/row%20dan%20column/latihan.dart';
+import 'package:flutter_sidik/row%20dan%20column/latihan2.dart';
+import 'package:flutter_sidik/row%20dan%20column/layout.widget.dart';
+
+import 'package:flutter_sidik/row%20dan%20column/row_widget.dart';
+import 'package:flutter_sidik/row%20dan%20column/column.widget.dart';
+import 'package:flutter_sidik/row%20dan%20column/row_column.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +23,7 @@ class MyApp extends StatelessWidget {
           title: Text('belajar'),
           backgroundColor: Colors.blue,
         ),
-        body: LatihanContainer(),
+        body: Latihan2(),
       ),
     );
   }
