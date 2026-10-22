@@ -6,7 +6,6 @@ import 'package:flutter_sidik/row%20dan%20column/layout.widget.dart';
 import 'package:flutter_sidik/row%20dan%20column/row_widget.dart';
 import 'package:flutter_sidik/row%20dan%20column/column.widget.dart';
 import 'package:flutter_sidik/row%20dan%20column/row_column.dart';
-import 'package:flutter_sidik/stack%20dan%20expended%20dan%20sizedbox/ai.dart';
 import 'package:flutter_sidik/stack%20dan%20expended%20dan%20sizedbox/latihan1.dart';
 import 'package:flutter_sidik/stack%20dan%20expended%20dan%20sizedbox/layout1.dart';
 import 'package:flutter_sidik/stack%20dan%20expended%20dan%20sizedbox/layout2.dart';
@@ -32,7 +31,7 @@ class MyApp extends StatelessWidget {
           title: Text('belajar'),
           backgroundColor: Colors.blue,
         ),
-        body:acik1(),
+        body:Acik1(),
       ),
     );
   }
