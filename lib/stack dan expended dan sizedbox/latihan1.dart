@@ -1,162 +1,310 @@
-
 import 'package:flutter/material.dart';
-
-class Acik1 extends StatelessWidget {
-  const Acik1({super.key});
-
+class Latihan1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Container bagian atas
         Container(
-          height: 80,
-          margin: const EdgeInsets.all(12),
-          padding: const EdgeInsets.symmetric(horizontal: 14),
-          decoration: BoxDecoration(
-            color: const Color(0xFF0866E9),
-            borderRadius: BorderRadius.circular(10),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.2),
-                blurRadius: 5,
-                offset: const Offset(0, 3),
-              ),
-            ],
+          width: double.infinity,
+          padding: const EdgeInsets.all(24),
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFF3867E8), Color(0xFF5146E5)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(28),
+              bottomRight: Radius.circular(28),
+            ),
           ),
           child: Row(
             children: [
-              const CircleAvatar(
-                radius: 24,
-                backgroundColor: Colors.white,
-                child: Icon(
+              Container(
+                width: 76,
+                height: 76,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(50),
+                ),
+                child: const Icon(
                   Icons.person,
-                  size: 32,
-                  color: Color(0xFF0866E9),
+                  size: 55,
+                  color: Color(0xFF3867E8),
                 ),
               ),
-              const SizedBox(width: 12),
+
+              const SizedBox(width: 16),
+
               const Expanded(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'sidiktsq',
+                      'Rizky Mochamad Sidik',
                       style: TextStyle(
-                        color: Colors.white,
+                        fontSize: 20,
                         fontWeight: FontWeight.bold,
-                        fontSize: 16,
+                        color: Colors.white,
                       ),
                     ),
-                    SizedBox(height: 4),
+                    SizedBox(height: 5),
                     Text(
-                      'Kelas 12',
-                      style: TextStyle(
-                        color: Colors.white70,
-                        fontSize: 12,
-                      ),
+                      'XII RPL',
+                      style: TextStyle(fontSize: 12, color: Colors.white70),
                     ),
                   ],
                 ),
               ),
-             
-                 Icon(
-                  Icons.notifications_none,
-                  color: Colors.white,
-                  size: 28,
-                ),
-              
+
+              const SizedBox(width: 8),
+
+              const Icon(
+                Icons.notifications_none,
+                color: Colors.white,
+                size: 28,
+              ),
             ],
           ),
         ),
 
-        // Container bagian bawah
-        Container(
-          width: double.infinity,
-          height: 150,
-          margin: const EdgeInsets.symmetric(
-            horizontal: 12,
-            vertical: 4,
-          ),
-          padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            gradient: const LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                Color(0xFF0878F9),
-                Color(0xFF00A9D6),
+        const SizedBox(height: 20),
+
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Container(
+            height: 240,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                colors: [Color(0xFF1557A6), Color(0xFF59B9E8)],
+                begin: Alignment.bottomLeft,
+                end: Alignment.topRight,
+              ),
+              borderRadius: BorderRadius.circular(18),
+            ),
+            child: Stack(
+              children: [
+                const Positioned(
+                  right: 15,
+                  top: 15,
+                  child: Icon(
+                    Icons.flutter_dash,
+                    size: 100,
+                    color: Colors.white24,
+                  ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 6,
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.white24,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: const Text(
+                          'TETAP SEMANGAT!',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 11,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+
+                      const SizedBox(height: 14),
+
+                      const Text(
+                        'Belajar Flutter!',
+                        style: TextStyle(
+                          fontSize: 27,
+                          height: 1.15,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+
+                      const SizedBox(height: 10),
+
+                      const Text(
+                        'Bangun aplikasi mulai dari fundamental!',
+                        style: TextStyle(fontSize: 14, color: Colors.white),
+                      ),
+
+                      const Spacer(),
+
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 18,
+                          vertical: 12,
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: const Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              'Mulai Belajar',
+                              style: TextStyle(
+                                color: Color(0xFF17346D),
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Icon(
+                              Icons.arrow_forward,
+                              color: Color(0xFF17346D),
+                              size: 18,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
-            borderRadius: BorderRadius.circular(10),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.15),
-                blurRadius: 5,
-                offset: const Offset(0, 3),
-              ),
-            ],
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 10,
-                  vertical: 4,
-                ),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: const Text(
-                  'PEMBELAJARAN',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 9,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              const Text(
-                'Belajar Flutter!',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 4),
-              const Text(
-                'Mari belajar membuat aplikasi dengan Dart',
-                style: TextStyle(
-                  color: Colors.white70,
-                  fontSize: 11,
-                ),
-              ),
-              const Spacer(),
-              ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  foregroundColor: Colors.blue,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 14,
-                    vertical: 6,
-                  ),
-                  minimumSize: Size.zero,
-                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                ),
-                child: const Text(
-                  'Mulai Belajar',
-                  style: TextStyle(fontSize: 10),
-                ),
-              ),
-            ],
           ),
         ),
+        const SizedBox(height: 20),  
+        Padding(
+          padding: const EdgeInsets.all(16),
+          child: Text(
+            'skill saya',
+            style: const TextStyle(
+              color: Colors.black,
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        Row(
+  children: [
+    Container(
+      margin: const EdgeInsets.symmetric(horizontal: 20),
+      height: 100,
+      width: 100,
+   decoration: BoxDecoration(
+    color: Colors.cyan,
+     image: const DecorationImage(
+      image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI54guGV79U7DS3XQFO5GigZdsEV2xHwrllj9QBN53mA&s=10'),
+      fit: BoxFit.cover,
+     )
+   ),  
+      child: const Stack(
+                  children: [
+                    Positioned(
+                      top: 4,
+                      right: 4,
+                      child: Icon(
+                        Icons.check_circle,
+                        color: Color.fromARGB(255, 255, 255, 255),
+                        size: 20,
+                      ),
+                    ),
+                    Positioned(
+                      bottom: 2,
+                      right: 2,
+                      child: Text(
+                        'LARAVEL',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 11,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+      ),
+    Container(
+      margin: const EdgeInsets.symmetric(horizontal: 20),
+      height: 100,
+      width: 100,
+   decoration: BoxDecoration(
+    color: Colors.cyan,
+   
+     image: const DecorationImage(
+      image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpuNE_ASb0ewCvWZCel5xzw53zPgfasWVmODyiF0233w&s'),
+      fit: BoxFit.cover,
+     )
+   ),
+   child: const Stack(
+                  children: [
+                    Positioned(
+                      top: 4,
+                      right: 4,
+                      child: Icon(
+                        Icons.check_circle,
+                        color: Color.fromARGB(255, 255, 255, 255),
+                        size: 20,
+                      ),
+                    ),
+                    Positioned(
+                      bottom: 2,
+                      right: 2,
+                      child: Text(
+                        'nuxt',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 11,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+    ),
+     Container(
+      margin: const EdgeInsets.symmetric(horizontal: 20),
+      height: 100,
+      width: 100,
+   decoration: BoxDecoration(
+    color: Colors.cyan,
+
+     image: const DecorationImage(
+      image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYOpVKFcE6EcAbJnHSMO4mMeAwthEHKPOwlzI0yeN7ag&s=10'),
+      fit: BoxFit.cover,
+     )
+   ),
+   child: const Stack(
+                  children: [
+                    Positioned(
+                      top: 4,
+                      right: 4,
+                      child: Icon(
+                        Icons.check_circle,
+                        color: Color.fromARGB(255, 255, 255, 255),
+                        size: 20,
+                      ),
+                    ),
+                    Positioned(
+                      bottom: 2,
+                      right: 2,
+                      child: Text(
+                        'flutter',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 11,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+    ),
+  ],
+),
       ],
     );
   }

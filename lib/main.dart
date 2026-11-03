@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sidik/list/latihan_list1.dart';
+import 'package:flutter_sidik/list/list_basic.dart';
+import 'package:flutter_sidik/list/list_builder.dart';
+import 'package:flutter_sidik/list/list_builder2.dart';
+import 'package:flutter_sidik/list/list_separated.dart';
 import 'package:flutter_sidik/row%20dan%20column/latihan.dart';
 import 'package:flutter_sidik/row%20dan%20column/latihan2.dart';
 import 'package:flutter_sidik/row%20dan%20column/layout.widget.dart';
@@ -31,7 +36,7 @@ class MyApp extends StatelessWidget {
           title: Text('belajar'),
           backgroundColor: Colors.blue,
         ),
-        body:Acik1(),
+        body:LatihanView1(),
       ),
     );
   }
@@ -44,7 +49,7 @@ class HellloWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        'Hello, Lintang!',
+        'Hello, ',
         style: TextStyle(
           fontSize: 24,
           fontWeight: FontWeight.bold,
