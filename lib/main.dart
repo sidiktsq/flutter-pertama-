@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sidik/gridview/cobain.dart';
+import 'package:flutter_sidik/gridview/grid_basic.dart';
+import 'package:flutter_sidik/gridview/grid_builder.dart';
+import 'package:flutter_sidik/gridview/kelompok.dart';
 import 'package:flutter_sidik/list/latihan_list1.dart';
 import 'package:flutter_sidik/list/list_basic.dart';
 import 'package:flutter_sidik/list/list_builder.dart';
@@ -36,7 +40,7 @@ class MyApp extends StatelessWidget {
           title: Text('belajar'),
           backgroundColor: Colors.blue,
         ),
-        body:LatihanView1(),
+        body:cobain(),
       ),
     );
   }
