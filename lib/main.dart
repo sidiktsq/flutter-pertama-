@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sidik/container_widget/latihan_container.dart';
 import 'package:flutter_sidik/gridview/cobain.dart';
 import 'package:flutter_sidik/gridview/grid_basic.dart';
 import 'package:flutter_sidik/gridview/grid_builder.dart';
@@ -8,6 +9,7 @@ import 'package:flutter_sidik/list/list_basic.dart';
 import 'package:flutter_sidik/list/list_builder.dart';
 import 'package:flutter_sidik/list/list_builder2.dart';
 import 'package:flutter_sidik/list/list_separated.dart';
+import 'package:flutter_sidik/navigation/contoh.dart';
 import 'package:flutter_sidik/row%20dan%20column/latihan.dart';
 import 'package:flutter_sidik/row%20dan%20column/latihan2.dart';
 import 'package:flutter_sidik/row%20dan%20column/layout.widget.dart';
@@ -34,14 +36,23 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('belajar'),
-          backgroundColor: Colors.blue,
-        ),
-        body:cobain(),
-      ),
+      // debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/':(context) => contohnav(),
+        '/cobain':(context) => cobain(),
+        '/LatihanView1':(context) => LatihanView1(),
+        '/LatihanContainer':(context) =>LatihanContainer(),
+        '/Latihan2':(context) =>Latihan2(),
+        '/Latihan1':(context) =>Latihan1(),
+      },
+      // home: Scaffold(
+      //   appBar: AppBar(
+      //     title: Text('belajar'),
+      //     backgroundColor: Colors.blue,
+      //   ),
+      //   body:contohnav(),
+      // ),
     );
   }
 }
